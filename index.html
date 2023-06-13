@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Welcome to Tamanna Ladies Tailor - Get your course complitaion certificate
+    </title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./bannaer.jpg" alt="Tamanna Ladies Tailor Banner" />
+      <h4>Congratulation | Get your certificate</h4>
+      <h4>
+        <a
+          href="https://www.facebook.com/groups/194499409565870"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Tamanna Ladies Tailor</a
+        >
+      </h4>
+      <br />
+    </header>
+    <main>
+      <label for="name">Enter Your Name</label>
+      <input
+        required
+        type="text"
+        name="Name"
+        autocomplete="name"
+        placeholder="example@Tamanna"
+        id="name"
+        minlength="5"
+        maxlength="20"
+      />
+      <button id="submitBtn">Get Certificate</button>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy;Developed By
+        <a href="https://www.facebook.com/muntasirul.msd" target="_blank"
+          >Muntasirul Islam</a
+        >
+      </p>
+    </footer>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
