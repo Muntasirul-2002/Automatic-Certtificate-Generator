@@ -21,9 +21,9 @@ submitBtn.addEventListener("click", () => {
 });
 
 const generatePDF = async (name) => {
-  const existingPdfBytes = await fetch("./cert.pdf").then((res) =>
-    res.arrayBuffer()
-  );
+  const existingPdfBytes = await fetch(
+    "./tamanna_ladies_tailor certificate.pdf"
+  ).then((res) => res.arrayBuffer());
 
   // Load a PDFDocument from the existing PDF bytes
   const pdfDoc = await PDFDocument.load(existingPdfBytes);
@@ -43,7 +43,7 @@ const generatePDF = async (name) => {
 
   // Draw a string of text diagonally across the first page
   firstPage.drawText(name, {
-    x: 250,
+    x: 180,
     y: 335,
     size: 45,
     font: SanChezFont,
